@@ -6,18 +6,16 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-        text: "0"
+        text: 0
     }
   }
-
-
 
 
   render() {
     return (
       <div className="container">
         <textarea rows="3" onChange={this.count.bind(this)}></textarea>
-        <div className="counter"> {this.state.text} </div>
+        <div className="counter">{this.state.text}</div>
       </div>
     );
 
@@ -26,9 +24,7 @@ class App extends Component {
 
   count(event) {
     this.setState({
-
       text: event.target.value.length
-
     });
   }
 
