@@ -17,7 +17,7 @@ class App extends Component {
     return (
       <div className="container">
         <textarea rows="3" onChange={this.count.bind(this)}></textarea>
-        < div className = "counter" > {this.state.text} </div>
+        <div className="counter"> {this.state.text} </div>
       </div>
     );
 
